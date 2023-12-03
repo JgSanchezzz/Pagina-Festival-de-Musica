@@ -1,0 +1,54 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header {
+  z-index: 999999;
+  background-color: v.$verde;
+  h1 {
+    @include m.tablet {
+      margin: 0;
+    }
+    color: v.$blanco;
+    font-size: 3.5rem;
+    @include m.desktop {
+      font-size: 4rem;
+    }
+  }
+}
+.contenido_header {
+  text-align: center;
+  padding: 2rem;
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.nav-principal {
+  @include m.tablet {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  a {
+    @include m.tablet {
+      margin: 0;
+    }
+    @include m.desktop {
+      font-size: 2.4rem;
+    }
+    color: v.$blanco;
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 1rem;
+    &:hover {
+      color: v.$amarillo;
+    }
+  }
+}
+.fijar-barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0.1rem 0.2rem 0.3rem #333;
+}

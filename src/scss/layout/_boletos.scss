@@ -1,0 +1,59 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.boletos {
+  background-color: v.$verde;
+  padding: 5rem 0;
+  h3 {
+    color: v.$blanco;
+    margin: 0;
+    @include m.tablet {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.contenedor-boletos {
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+.contenido-boletos {
+  p {
+    color: v.$blanco;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .pase-premium,
+  .pase-sencillo {
+    font-size: 2.8rem;
+    padding: 0;
+    margin: 2.8rem 0;
+  }
+
+  .descripcion-boleto {
+    background-color: v.$rosa;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  .precio-boleto {
+    background-color: v.$morado;
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      background-color: v.$blanco;
+      padding: 1rem;
+      border-bottom: 1px solid v.$gris;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}

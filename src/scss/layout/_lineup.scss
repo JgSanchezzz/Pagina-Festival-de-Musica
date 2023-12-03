@@ -1,0 +1,107 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.line-up {
+  background-color: v.$rosa;
+  padding: 5rem 0;
+}
+.contenido-line-up {
+  h3 {
+    color: v.$blanco;
+  }
+  .fecha-concierto {
+    color: v.$blanco;
+    text-transform: uppercase;
+    margin: 5rem 0;
+  }
+}
+
+.escenarios {
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+
+.escenario-rock {
+  .icono-rock {
+    background-image: url(../img/icono_rock.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+  p {
+    padding-bottom: 1.2rem;
+  }
+  background-color: v.$amarillo;
+
+  padding-top: 2rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 3.3rem 0 0 0;
+  }
+  li {
+    padding: 2.5rem;
+    &:nth-child(odd) {
+      background-color: v.$amarillo-oscuro;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.escenario-edm {
+  .icono-edm {
+    background-image: url(../img/icono_edm.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+  p {
+    padding-bottom: 1.3rem;
+  }
+  background-color: v.$verde;
+  padding-top: 2rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 3.3rem 0 0 0;
+  }
+  li {
+    padding: 2.5rem;
+    &:nth-child(odd) {
+      background-color: v.$azul;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.escenario-rock-bg {
+  background-color: v.$verde;
+  li {
+    &:nth-child(odd) {
+      background-color: v.$azul;
+    }
+  }
+}
+
+.escenario-edm-bg {
+  background-color: v.$amarillo;
+  li {
+    &:nth-child(odd) {
+      background-color: v.$amarillo-oscuro;
+    }
+  }
+}

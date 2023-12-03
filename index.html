@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido_header">
+        <h1>Rock & EDM Festival</h1>
+        <nav class="nav-principal">
+          <a href="#line-up">Line Up</a>
+          <a href="#galeria">Galería</a>
+          <a href="#boletos">Boletos</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video">
+      <div class="overlay">
+        <div class="contenedor contenido_video">
+          <h2>Rock & EDM Festival</h2>
+          <p>Enero 2024, Chiapas, México.</p>
+        </div>
+      </div>
+      <video autoplay muted loop>
+        <source src="video/concierto.mp4" type="video/mp4" />
+        <source src="video/concierto.ogg" type="video/ogg" />
+        <source src="video/concierto.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <section class="contenedor sobre-festival">
+      <div>
+        <picture>
+          <source srcset="build/img/imagen_vocalista.avif" type="image/avif" />
+          <source srcset="build/img/imagen_vocalista.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/imagen_vocalista.jpg"
+            alt="vocalista rock"
+          />
+        </picture>
+      </div>
+      <div class="contenido-festival">
+        <h2>Rock & EDM Festival</h2>
+        <p class="fecha">Enero 2024, Chiapas, México.</p>
+        <p>
+          Fusce at sapien ac est consequat porta. Proin at ipsum rhoncus,
+          aliquam est vel, consectetur dui. Vivamus aliquam neque a suscipit
+          malesuada. Duis sed sem ac ipsum dapibus suscipit a vitae justo.
+          Nullam pulvinar dui bibendum elit mattis rhoncus.
+        </p>
+      </div>
+    </section>
+
+    <section id="line-up" class="line-up">
+      <div class="contenedor contenido-line-up">
+        <h3 class="text-center">Line Up</h3>
+        <p class="fecha-concierto text-center">Viernes 21</p>
+        <div class="escenarios">
+          <div class="escenario-rock">
+            <p class="text-center">Escenario Rock</p>
+            <div class="icono-rock"></div>
+            <ul>
+              <li><span>24:00 |</span> Metallica</li>
+              <li><span>22:00 |</span> Pearl Jam</li>
+              <li><span>20:00 |</span> KoRn</li>
+              <li><span>19:00 |</span> Muse</li>
+              <li><span>18:00 |</span> Breaking Benjamin</li>
+              <li><span>17:00 |</span> 30 Seconds to Mars</li>
+            </ul>
+          </div>
+          <div class="escenario-edm">
+            <p class="text-center">Escenario EDM</p>
+            <div class="icono-edm"></div>
+            <ul>
+              <li><span>24:00 |</span> Deadmau5</li>
+              <li><span>22:00 |</span> Tïesto</li>
+              <li><span>20:00 |</span> Hardwell</li>
+              <li><span>19:00 |</span> Dash Berlin</li>
+              <li><span>18:00 |</span> Fedde Legrand</li>
+              <li><span>17:00 |</span> Audien</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="fecha-concierto text-center">Sabado 22</p>
+
+        <div class="escenarios">
+          <div class="escenario-rock escenario-rock-bg">
+            <p class="text-center">Escenario Rock</p>
+            <div class="icono-rock"></div>
+            <ul>
+              <li><span>24:00 |</span> Red Hot Chili Peppers</li>
+              <li><span>22:00 |</span> The Killers</li>
+              <li><span>20:00 |</span> Deftones</li>
+              <li><span>19:00 |</span> Limp Bizkit</li>
+              <li><span>18:00 |</span> Papa Roach</li>
+              <li><span>17:00 |</span> Lamb of God</li>
+            </ul>
+          </div>
+
+          <div class="escenario-edm escenario-edm-bg">
+            <p class="text-center">Escenario EDM</p>
+            <div class="icono-edm"></div>
+            <ul>
+              <li><span>24:00 |</span> Paul Van Dyk</li>
+              <li><span>22:00 |</span> Armin Van Buuren</li>
+              <li><span>20:00 |</span> Above & Beyond</li>
+              <li><span>19:00 |</span> Eric Prdyz</li>
+              <li><span>18:00 |</span> Ferry Corsten</li>
+              <li><span>17:00 |</span> Vini Vici</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+      <h3 class="text-center">Galería</h3>
+      <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos">
+      <h3 class="text-center">Boletos</h3>
+      <div class="contenedor contenedor-boletos">
+        <div class="contenido-boletos">
+          <p class="pase-sencillo">Pase 1 Día</p>
+          <p class="descripcion-boleto">Incluye</p>
+          <ul>
+            <li>Acceso a ambos escenarios</li>
+            <li>Comida y Bebida</li>
+          </ul>
+          <p class="precio-boleto">$100</p>
+        </div>
+        <div class="contenido-boletos">
+          <p class="pase-premium">Pase 2 Días</p>
+          <p class="descripcion-boleto">Incluye</p>
+          <ul>
+            <li>Acceso a ambos escenarios</li>
+            <li>Comida y Bebida</li>
+            <li>Camisa del Evento</li>
+            <li>Acceso VIP</li>
+          </ul>
+          <p class="precio-boleto">$100</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Rock & EDM Festival. Todos los Derechos Reservados®</p>
+    </footer>
+
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
