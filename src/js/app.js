@@ -41,13 +41,13 @@ function crearGaleria() {
   for (let x = 1; x <= 12; x++) {
     const imagen = document.createElement("picture");
     imagen.innerHTML = `
-              <source srcset="img/thumb/${x}.avif" type="image/avif" />
-              <source srcset="img/thumb/${x}.webp" type="image/webp" />
+              <source srcset="../img/thumb/${x}.avif" type="image/avif" />
+              <source srcset="../img/thumb/${x}.webp" type="image/webp" />
                 <img
                   loading="lazy"
                   width="200"
                   height="300"
-                  src="img/thumb/${x}.jpg"
+                  src="../img/thumb/${x}.jpg"
                   alt="imagen galeria"
                 />
         `;
@@ -60,13 +60,13 @@ function crearGaleria() {
 function mostrarImagen(id) {
   const imagen = document.createElement("picture");
   imagen.innerHTML = `
-              <source srcset="img/grande/${id}.avif" type="image/avif" />
-              <source srcset="img/grande/${id}.webp" type="image/webp" />
+              <source srcset="../img/grande/${id}.avif" type="image/avif" />
+              <source srcset="../img/grande/${id}.webp" type="image/webp" />
                 <img
                   loading="lazy"
                   width="200"
                   height="300"
-                  src="img/grande/${id}.jpg"
+                  src="../img/grande/${id}.jpg"
                   alt="imagen galeria"
                 />
         `;
